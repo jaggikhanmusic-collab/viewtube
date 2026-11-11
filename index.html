@@ -3,36 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIEWTUBE - Panjab Da Apna Channel</title>
+    <title>VIEWTUBE - Global Video Platform</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #121212; color: #ffffff; }
-        header { background-color: #1f1f1f; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ff0000; }
-        .logo { font-size: 24px; font-weight: bold; color: #ffcc00; }
-        .container { padding: 30px; text-align: center; }
-        h1 { color: #ff0000; }
-        .video-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px; }
-        .video-card { background: #222; width: 300px; padding: 15px; border-radius: 8px; border: 1px solid #444; }
-        .video-card h3 { font-size: 16px; margin-bottom: 10px; color: #ffcc00; }
+        body { font-family: Roboto, Arial, sans-serif; margin: 0; background-color: #0f0f0f; color: #ffffff; }
+        header { background-color: #212121; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #3f3f3f; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 22px; font-weight: bold; color: #ff0000; letter-spacing: 1px; display: flex; align-items: center; gap: 5px; }
+        .logo span { color: #ffffff; background: #ff0000; padding: 2px 6px; border-radius: 4px; }
+        .search-bar { display: flex; width: 40%; background: #121212; border: 1px solid #303030; border-radius: 20px; overflow: hidden; }
+        .search-bar input { width: 100%; background: transparent; border: none; padding: 10px 15px; color: #fff; font-size: 16px; outline: none; }
+        .search-bar button { background: #222; border: none; padding: 0 20px; color: #aaa; cursor: pointer; border-left: 1px solid #303030; }
+        .nav-right { display: flex; gap: 15px; align-items: center; }
+        .upload-btn { background: #cc0000; color: white; border: none; padding: 8px 16px; border-radius: 18px; font-weight: bold; cursor: pointer; text-decoration: none; }
+        .upload-btn:hover { background: #e60000; }
+        .container { padding: 24px; max-width: 1400px; margin: auto; }
+        h2 { font-size: 20px; margin-bottom: 20px; color: #fff; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .video-card { background: #1f1f1f; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s; }
+        .video-card:hover { transform: scale(1.02); }
+        .video-thumb { height: 160px; background: #333; display: flex; align-items: center; justify-content: center; color: #888; font-weight: bold; }
+        .video-info { padding: 12px; }
+        .video-title { font-size: 15px; font-weight: 500; margin-bottom: 6px; color: #fff; }
+        .video-channel { font-size: 13px; color: #aaa; }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">VIEWTUBE</div>
-        <div>Panjab Da Apna Platform</div>
+        <div class="logo">VIEW<span>TUBE</span></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search global videos, music, shows...">
+            <button>🔍</button>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="upload-btn">＋ Upload</a>
+        </div>
     </header>
+
     <div class="container">
-        <h1>Welcome to VIEWTUBE</h1>
-        <p>Your own video platform for News, Music, and Live Shows.</p>
+        <h2>Trending Global Videos & Creator Uploads</h2>
         <div class="video-grid">
             <div class="video-card">
-                <h3>JK Media News & Live Shows</h3>
-                <p>Uploads coming soon...</p>
+                <div class="video-thumb">JK Media Live</div>
+                <div class="video-info">
+                    <div class="video-title">Global Live Broadcast & Cultural Stage</div>
+                    <div class="video-channel">Jaggi Khan Productions</div>
+                </div>
             </div>
             <div class="video-card">
-                <h3>Punjabi Entertainment & DJ</h3>
-                <p>Uploads coming soon...</p>
+                <div class="video-thumb">Music & Entertainment</div>
+                <div class="video-info">
+                    <div class="video-title">Latest Punjabi Folk & Global Hits</div>
+                    <div class="video-channel">UK Music Official</div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-thumb">World News & Media</div>
+                <div class="video-info">
+                    <div class="video-title">JK Media Worldwide Breaking News</div>
+                    <div class="video-channel">JK Media News</div>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
